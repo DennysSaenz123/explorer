@@ -24,5 +24,15 @@ public class ExplorerSearchTest {
         };
         assertEquals(1, ExplorerSearch.reachableArea(island));
     }
+
+    @Test
+    public void testReachableArea_allReachable() {
+        int[][] island = {
+            {1,1,1},
+            {1,0,1},
+            {1,1,1},
+        };
+        assertEquals(9, ExplorerSearch.reachableArea(island));
+    }
     
 }
