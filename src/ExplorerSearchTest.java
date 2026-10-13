@@ -17,4 +17,12 @@ public class ExplorerSearchTest {
 
     // Add more tests here!
     // Come up with varied cases
+    @Test
+    public void testReachableArea_onlyStart() {
+        int[][] island = {
+            {0},
+        };
+        assertEquals(1, ExplorerSearch.reachableArea(island));
+    }
+    
 }
